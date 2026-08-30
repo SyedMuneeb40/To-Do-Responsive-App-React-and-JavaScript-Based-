@@ -1,0 +1,82 @@
+.TaskCards{
+    width: 100%;
+    height: fit-content;
+    padding: 7px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(211, 208, 208, 0.452);
+    border-radius: 25px;
+}
+
+.TaskDescription{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0.2rem;
+}
+
+.TaskName{
+    font-size: 1rem;
+    width: 100%;
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+.TaskButtons{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.TaskButtons button{
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: 4px;
+    border: none;
+
+}
+
+.TaskButtons button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+@media all and (max-width:700px){
+
+    .TaskCards{
+        padding: 7px 15px;
+
+    }
+
+    .TaskDescription{
+        gap: 1px;
+    }
+
+    .TaskName{
+        font-size: 0.8rem;
+    }
+
+    .TaskDescription h5{
+        font-size: 0.7rem;
+    }
+
+    .TaskButtons{
+        gap: 0.3rem;
+        margin-left: 12px;
+    }
+
+    .TaskButtons button{
+        font-size: 0.8rem;
+    }
+
+}
